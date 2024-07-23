@@ -1,25 +1,23 @@
 #include<stdio.h>
-
 int main(){
-	int n,sum,num;
-	sum=0;
-	num=0;
-	scanf("%d",&n);
 	
+	int n=1;
+	int sum=0,sum2=0;
 	
-	for(int i=1;i<=n;i++){
-		
-		if(i%6==0){ 
-			sum+=i;
-			num=num+1;
-			printf("%d ",i); 
-		}
-	
-	}
 
-	printf("°¹¼ö: %d\n",num);
-	printf("ÇÕ : %d",sum );
+	
+	while(n<=10){
+		
+		if(n%2==0){
+		sum+=n;
+		
+	}
+		else{
+		sum2+=n;
+	}
 	
 	
-	
+		n++;
+	}
+		printf("%d %d",sum,sum2);
 }

@@ -1,18 +1,19 @@
 #include<stdio.h>
-
 int main(){
-	int n;
+	
+	int n,sum=0;
+	
 	scanf("%d",&n);
-	
-	
-	for(int i=1;i<=n;i++){
-		if(i%3==0)
-		{
-		printf("%d",i);
-		}
-}
-	
-	
-	
+	//12345
+	while(n>0){
+		
+		sum+=n%10;
+		printf("%d ",n%10);
+		
+		n/=10;
+	}
+		printf("%d",sum);
 	
 }
+
+

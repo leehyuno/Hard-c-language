@@ -1,20 +1,18 @@
 #include<stdio.h>
-
 int main(){
-	int t,a,b;
-	scanf("%d",&t);
+	
+	int n,m=0;
 
-	
-	
-	for(int i=1;i<=t;i++){
-		scanf("%d %d",&a,&b);
-		printf("%d\n",a+b);
+	scanf("%d",&n);
+	int fuck=n;
+		while(n>0){
 		
-			
+		m=m*10+n%10;
+		n/=10;
 	}
-
 	
 	
-	
-	
+		printf("%d ",m);
+		printf("%d",m+fuck);
+		
 }
